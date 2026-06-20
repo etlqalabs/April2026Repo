@@ -39,7 +39,7 @@ def compare_data_between_target_and_source(oracle_conn,mysql_conn):
         print("Test Passed")
     else:
         df_ans.to_csv("data/extra_in_target.csv", index=False)
-        print("Test Failed")
+        print("Test Failed !")
 
 compare_data_between_source_and_target(oracle_conn,mysql_conn)
 compare_data_between_target_and_source(oracle_conn,mysql_conn)
